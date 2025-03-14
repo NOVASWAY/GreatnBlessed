@@ -9,11 +9,11 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-20">
-          <div className="container flex flex-col md:flex-row items-center">
+        <section className="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-12 md:py-20">
+          <div className="container px-4 mx-auto flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-8 md:mb-0">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">Express Your Style with GreatnBlessedCustoms!</h1>
-              <p className="text-xl mb-6">Unleash your creativity with our custom clothing designs.</p>
+              <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-tight">Express Your Style with GreatnBlessedCustoms!</h1>
+              <p className="text-lg md:text-xl mb-6">Unleash your creativity with our custom clothing designs.</p>
               <Button
                 size="lg"
                 className="bg-white text-blue-600 hover:bg-blue-100 transform hover:scale-105 transition-all"
@@ -21,23 +21,23 @@ export default function Home() {
                 Start Customizing
               </Button>
             </div>
-            <div className="md:w-1/2">
+            <div className="md:w-1/2 flex justify-center">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-02-01%20at%2022.36.36%20(2)-ySCOJxEKwIRzY1vymghKEv8WixYIQv.jpeg"
                 alt="Custom anime design t-shirt"
                 width={400}
                 height={400}
-                className="rounded-lg shadow-lg hover:opacity-90 transition-opacity"
+                className="rounded-lg shadow-lg hover:opacity-90 transition-opacity max-w-full h-auto"
               />
             </div>
           </div>
         </section>
 
         {/* Examples Section */}
-        <section id="examples" className="py-16 bg-gray-100">
-          <div className="container">
-            <h2 className="text-3xl font-bold text-center mb-12">Our Custom Designs</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <section id="examples" className="py-12 md:py-16 bg-gray-100">
+          <div className="container px-4 mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12">Our Custom Designs</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {[
                 {
                   src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-02-01%20at%2022.36.33-OcFrCB9FAMkzgtN4832jXlWqHEhVEm.jpeg",
@@ -85,7 +85,7 @@ export default function Home() {
                     alt={item.alt}
                     width={600}
                     height={600}
-                    className="w-full h-80 object-cover hover:opacity-90 transition-opacity"
+                    className="w-full h-60 sm:h-80 object-cover hover:opacity-90 transition-opacity"
                   />
                   <div className="p-4">
                     <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
@@ -98,18 +98,18 @@ export default function Home() {
         </section>
 
         {/* How It Works Section */}
-        <section id="how-it-works" className="py-16">
-          <div className="container">
-            <h2 className="text-3xl font-bold text-center mb-12">How It Works</h2>
-            <div className="flex flex-col md:flex-row justify-around items-center space-y-8 md:space-y-0">
+        <section id="how-it-works" className="py-12 md:py-16">
+          <div className="container px-4 mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12">How It Works</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
               {[
                 { step: 1, title: "Tell us what you want", icon: "💡" },
                 { step: 2, title: "We make it happen", icon: "🎨" },
                 { step: 3, title: "You look amazing!", icon: "🌟" },
               ].map((step) => (
                 <div key={step.step} className="text-center transform hover:scale-105 transition-all duration-300">
-                  <div className="text-5xl mb-4">{step.icon}</div>
-                  <h3 className="text-xl font-semibold mb-2">
+                  <div className="text-4xl md:text-5xl mb-4">{step.icon}</div>
+                  <h3 className="text-lg md:text-xl font-semibold mb-2">
                     {step.step}. {step.title}
                   </h3>
                 </div>
