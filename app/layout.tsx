@@ -9,7 +9,16 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600", "700"] })
 export const metadata: Metadata = {
   title: "GreatnBlessedCustoms",
   description: "Express Your Style with Custom Clothing",
-    generator: 'v0.dev'
+  generator: 'v0.dev',
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico', sizes: 'any' }
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }
+    ]
+  }
 }
 
 export default function RootLayout({
