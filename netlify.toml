@@ -2,15 +2,12 @@
   command = "npm run build"
   publish = ".next"
 
-# Ensure Next.js output is used correctly
-[build.environment]
-  NEXT_TELEMETRY_DISABLED = "1"
-
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
 [build.environment]
   NODE_VERSION = "18"
+  NEXT_TELEMETRY_DISABLED = "1"
 
 # Next.js settings
 [build.processing]
