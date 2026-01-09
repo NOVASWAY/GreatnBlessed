@@ -59,16 +59,19 @@ export default function Home() {
               </div>
               <div className="w-full md:w-1/2 flex justify-center px-4 sm:px-0 relative z-10">
                 <div className="relative w-full max-w-lg group">
-                  <div className="absolute -inset-4 bg-gradient-to-r from-pink-400 to-purple-400 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
-                  <div className="relative rounded-2xl overflow-hidden shadow-2xl transform group-hover:scale-[1.02] transition-transform duration-300">
-                    <Image
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-02-01%20at%2022.36.36%20(2)-ySCOJxEKwIRzY1vymghKEv8WixYIQv.jpeg"
-                      alt="Custom anime design t-shirt"
-                      width={400}
-                      height={400}
-                      className="w-full h-auto"
-                      priority
-                    />
+                  {/* Subtle glow effect instead of background */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-pink-400/20 via-purple-400/20 to-blue-400/20 rounded-full blur-3xl group-hover:blur-[4rem] transition-all duration-300"></div>
+                  <div className="relative transform group-hover:scale-[1.05] transition-transform duration-300 flex items-center justify-center py-8">
+                    <div className="relative w-full max-w-sm">
+                      <Image
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-02-01%20at%2022.36.36%20(2)-ySCOJxEKwIRzY1vymghKEv8WixYIQv.jpeg"
+                        alt="Custom anime design t-shirt"
+                        width={400}
+                        height={400}
+                        className="w-full h-auto object-contain shirt-isolated"
+                        priority
+                      />
+                    </div>
                   </div>
                 </div>
               </div>

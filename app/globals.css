@@ -198,6 +198,29 @@ h1 span {
   width: auto;
 }
 
+/* Shirt image isolation effect - make it look like just the shirt */
+.shirt-isolated {
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.4)) 
+          drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3))
+          drop-shadow(0 0 10px rgba(139, 92, 246, 0.2));
+  background: transparent;
+  mix-blend-mode: normal;
+  isolation: isolate;
+  /* Remove any background by making edges blend */
+  -webkit-mask-image: radial-gradient(ellipse 80% 90% at center, black 60%, transparent 100%);
+  mask-image: radial-gradient(ellipse 80% 90% at center, black 60%, transparent 100%);
+}
+
+/* Enhanced shadow for floating effect */
+.shirt-isolated::before {
+  content: '';
+  position: absolute;
+  inset: -20px;
+  background: radial-gradient(ellipse at center, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
+  filter: blur(20px);
+  z-index: -1;
+}
+
 /* Subtle bounce animation for professional use */
 @keyframes bounce-subtle {
   0%, 100% {
