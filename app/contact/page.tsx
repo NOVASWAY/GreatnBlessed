@@ -37,7 +37,7 @@ export default function Contact() {
           <div className="flex flex-col gap-6 sm:gap-8">
             {/* WhatsApp 1 */}
             <a
-              href="https://wa.me/27768592764"
+              href="https://wa.me/254768592764"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative overflow-hidden bg-gradient-to-r from-green-400 via-green-500 to-emerald-500 rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transform hover:scale-105 hover:-rotate-1 transition-all duration-300 touch-manipulation"
@@ -52,7 +52,7 @@ export default function Contact() {
                 </div>
                 <div className="text-center sm:text-left">
                   <div className="text-white/80 text-sm sm:text-base font-medium mb-1">WhatsApp</div>
-                  <div className="text-white text-xl sm:text-2xl font-bold">076 859 2764</div>
+                  <div className="text-white text-xl sm:text-2xl font-bold">+254 768 592 764</div>
                 </div>
               </div>
               <div className="absolute top-2 right-2 text-white/20 text-6xl font-bold transform rotate-12">💬</div>
@@ -60,7 +60,7 @@ export default function Contact() {
             
             {/* WhatsApp 2 */}
             <a
-              href="https://wa.me/27799394191"
+              href="https://wa.me/254799394191"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative overflow-hidden bg-gradient-to-r from-emerald-400 via-green-500 to-teal-500 rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transform hover:scale-105 hover:rotate-1 transition-all duration-300 touch-manipulation"
@@ -75,7 +75,7 @@ export default function Contact() {
                 </div>
                 <div className="text-center sm:text-left">
                   <div className="text-white/80 text-sm sm:text-base font-medium mb-1">WhatsApp</div>
-                  <div className="text-white text-xl sm:text-2xl font-bold">079 939 4191</div>
+                  <div className="text-white text-xl sm:text-2xl font-bold">+254 799 394 191</div>
                 </div>
               </div>
               <div className="absolute top-2 right-2 text-white/20 text-6xl font-bold transform -rotate-12">✨</div>
