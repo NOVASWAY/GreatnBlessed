@@ -19,22 +19,22 @@ export default function Home() {
         {/* Hero Section */}
         <section className="relative bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 text-white py-12 sm:py-16 md:py-24 overflow-hidden">
           {/* Decorative background elements */}
-          <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 opacity-10 z-0">
             <div className="absolute top-20 left-10 w-72 h-72 bg-white rounded-full blur-3xl animate-pulse"></div>
             <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-300 rounded-full blur-3xl animate-pulse animation-delay-400"></div>
           </div>
           
-          <div className="container relative px-4 sm:px-6 lg:px-8 mx-auto">
+          <div className="container relative px-4 sm:px-6 lg:px-8 mx-auto z-10">
             <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-              <div className="w-full md:w-1/2 text-center md:text-left space-y-6 sm:space-y-8">
-                <div className="space-y-4">
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                    <span className="block">Express Your Style</span>
-                    <span className="block bg-gradient-to-r from-yellow-200 via-pink-200 to-purple-200 bg-clip-text text-transparent">
+              <div className="w-full md:w-1/2 text-center md:text-left space-y-6 sm:space-y-8 relative z-10 overflow-visible">
+                <div className="space-y-4 overflow-visible">
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight overflow-visible break-words">
+                    <span className="block text-white drop-shadow-lg w-full">Express Your Style</span>
+                    <span className="block bg-gradient-to-r from-yellow-200 via-pink-200 to-purple-200 bg-clip-text text-transparent drop-shadow-md overflow-visible w-full" style={{ WebkitTextFillColor: 'transparent', WebkitBackgroundClip: 'text', display: 'block' }}>
                       with GreatnBlessedCustoms
                     </span>
                   </h1>
-                  <p className="text-lg sm:text-xl md:text-2xl text-white/90 font-medium max-w-xl">
+                  <p className="text-lg sm:text-xl md:text-2xl text-white font-medium max-w-xl drop-shadow-md">
                     Unleash your creativity with premium custom clothing designs that reflect your unique personality.
                   </p>
                 </div>
@@ -57,7 +57,7 @@ export default function Home() {
                   </Button>
                 </div>
               </div>
-              <div className="w-full md:w-1/2 flex justify-center px-4 sm:px-0">
+              <div className="w-full md:w-1/2 flex justify-center px-4 sm:px-0 relative z-10">
                 <div className="relative w-full max-w-lg group">
                   <div className="absolute -inset-4 bg-gradient-to-r from-pink-400 to-purple-400 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
                   <div className="relative rounded-2xl overflow-hidden shadow-2xl transform group-hover:scale-[1.02] transition-transform duration-300">
@@ -81,7 +81,7 @@ export default function Home() {
           <div className="container px-4 sm:px-6 lg:px-8 mx-auto">
             <div className="text-center mb-10 sm:mb-14">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent" style={{ WebkitTextFillColor: 'transparent', WebkitBackgroundClip: 'text' }}>
                   Gallery
                 </span>
               </h2>
@@ -161,7 +161,7 @@ export default function Home() {
           <div className="container px-4 sm:px-6 lg:px-8 mx-auto">
             <div className="text-center mb-10 sm:mb-14">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent" style={{ WebkitTextFillColor: 'transparent', WebkitBackgroundClip: 'text' }}>
                   How It Works
                 </span>
               </h2>

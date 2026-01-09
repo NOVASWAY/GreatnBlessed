@@ -158,6 +158,46 @@ body {
   animation-delay: 400ms;
 }
 
+/* Ensure text is always visible */
+.bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* Fallback for gradient text visibility */
+@supports not (-webkit-background-clip: text) {
+  .bg-clip-text {
+    color: inherit;
+    background: none;
+    -webkit-text-fill-color: initial;
+  }
+}
+
+/* Ensure text has proper z-index */
+h1, h2, h3, h4, h5, h6, p {
+  position: relative;
+  z-index: 1;
+}
+
+/* Prevent text truncation in hero section */
+h1 span {
+  overflow: visible !important;
+  text-overflow: clip !important;
+  white-space: normal !important;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+/* Ensure gradient text is fully visible */
+.bg-clip-text {
+  overflow: visible !important;
+  text-overflow: clip !important;
+  max-width: 100%;
+  width: auto;
+}
+
 /* Subtle bounce animation for professional use */
 @keyframes bounce-subtle {
   0%, 100% {
